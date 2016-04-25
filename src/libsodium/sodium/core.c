@@ -3,6 +3,8 @@
 #include <time.h>
 #ifdef HAVE_PTHREAD
 # include <pthread.h>
+#elif defined(_WIN32)
+# include <windows.h>
 #endif
 
 #include "core.h"
